@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+data/
+*-state.json
+.env
+.DS_Store

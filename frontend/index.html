@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#115b51">
+<title>CareFlow | Hospital Management</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="/styles.css">
+<script src="/app.js" defer></script>
+</head>
+<body>
+<div id="toast" role="status" aria-live="polite" hidden></div>
+<section id="auth-screen" class="auth-layout">
+  <div class="auth-story">
+    <a class="brand light" href="/"><span class="brand-mark">+</span>CareFlow<span class="brand-label">HOSPITAL</span></a>
+    <div class="story-content"><span class="eyebrow">CARE, CONNECTED.</span><h1>More time for<br>what matters.</h1><p>One place for your appointments, care team and consultation history.</p><div class="story-art" aria-hidden="true"><span class="art-circle"></span><div class="care-card"><span class="mini-cross">+</span><div><strong>Care that comes together</strong><small>Patients. Doctors. Possibilities.</small></div><span class="check">✓</span></div><div class="pulse"><svg viewBox="0 0 400 100"><path d="M0 54 H90 L112 32 L139 77 L166 13 L193 87 L216 43 L234 54 H400" fill="none" stroke="currentColor" stroke-width="3"/></svg></div></div></div>
+    <p class="story-footer">Hospital management, thoughtfully simplified.</p>
+  </div>
+  <div class="auth-form-area"><div class="auth-box"><span class="eyebrow green">YOUR HEALTH, IN VIEW</span><h2 id="auth-title">Welcome back</h2><p id="auth-subtitle" class="muted">Sign in to your CareFlow account.</p><div class="tabs" id="auth-tabs"><button type="button" class="active" data-auth="login">Sign in</button><button type="button" data-auth="register">Patient registration</button></div><form id="auth-form"><div id="auth-fields"></div><button class="primary wide" id="auth-submit" type="submit">Sign in</button></form><p id="setup-hint" class="hint" hidden>First visit? <button type="button" class="text-button" data-auth="setup">Set up the administrator</button></p><p class="demo-note">Academic demonstration. Use fictional patient details only.</p></div></div>
+</section>
+<div id="workspace" class="workspace" hidden>
+<aside class="sidebar"><a class="brand" href="/"><span class="brand-mark">+</span>CareFlow</a><span class="sidebar-caption">WORKSPACE</span><nav id="navigation" aria-label="Main navigation"></nav><div class="sidebar-bottom"><div class="cloud-label"><span class="online-dot"></span><span id="storage-label">Connected workspace</span></div><p>Built around better care.</p></div></aside>
+<div class="main-area"><header class="topbar"><div><span class="topbar-label">CARE OPERATIONS</span><span class="timezone">All appointment times: IST</span></div><div class="profile"><span id="avatar" class="avatar"></span><div><strong id="profile-name"></strong><small id="profile-role"></small></div><button type="button" class="secondary small" id="logout">Sign out</button></div></header><main id="content" tabindex="-1"></main><footer class="app-footer">CareFlow Hospital Management <span>Academic cloud project · Fictional data only</span></footer></div>
+</div>
+</body>
+</html>
